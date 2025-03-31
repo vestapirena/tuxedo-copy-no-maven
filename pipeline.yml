@@ -1,0 +1,26 @@
+workflow: copy
+releaseId: tuxedo_config
+projectId: demo.tuxedo
+region: LOCAL
+csiId: 123456
+sourceCode:
+  projectStream: DEMO
+  projectModule: tuxedo-demo-config
+  repositoryInstance: local
+build:
+  dependencyResolutionRepo: none
+  deployLibraries: false
+  deployToPkgArchive: true
+  pomFileLocation: .
+  postBuildDeployEnv: NA
+threshold:
+  unitTestSuccessDensity: 0
+  securityRating: 0
+  techDebtRatio: 0
+  reliabilityRating: 0
+  unitTestCoverage: 0
+deploy:
+  LOCAL:
+    rlmEnvironment: NA
+    rlmTemplate: NA
+    rlmExecute: false
